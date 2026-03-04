@@ -1,4 +1,4 @@
-package com.rahmat.product.model;
+package com.rahmat.pelanggan.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,11 +8,10 @@ import lombok.Data;
 
 @Data
 @Entity
-public class produk{
+public class pelanggane{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nama;
-    private String satuan;
-    private double harga;
+    private String alamat;
 }

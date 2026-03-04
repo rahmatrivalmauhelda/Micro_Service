@@ -19,7 +19,7 @@ import com.rahmat.product.service.ProdukService;
 @RequestMapping("/api/produk")
 public class ProdukController{
    @Autowired
-    private ProdukService produkService;
+    private ProdukService produkService; //nama class dan objek
 
     @GetMapping
     public List<produk> getAllProduk() {

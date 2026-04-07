@@ -7,16 +7,14 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity (name = "orders")
+@Entity(name = "orders")
 public class Order {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private Long produkId;
-    private Long pelangganId;
+    private long id;
+    private long produkId;
     private int jumlah;
-    private String tanggal;
-    private String status;
     private double total;
+    private String tanggal;
+    private String email;
 }
